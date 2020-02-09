@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Podaci_o_glumcu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Podaci_o_glumcu">
+
+    <ImageView
+        android:id="@+id/iv_slika"
+        android:layout_width="186dp"
+        android:layout_height="179dp" />
+
+    <TextView
+        android:id="@+id/tv_ime"
+        android:layout_width="206dp"
+        android:layout_height="53dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="-161dp"
+        android:layout_marginRight="4dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_prezime"
+        android:layout_width="218dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_ime"
+        android:layout_alignStart="@+id/tv_ime"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-9dp" />
+
+    <DatePicker
+        android:id="@+id/tv_dat_rodjenja"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iv_slika"
+        android:layout_alignEnd="@+id/tv_dat_smrti"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="221dp" />
+
+    <DatePicker
+        android:id="@+id/tv_dat_smrti"
+        android:layout_width="218dp"
+        android:layout_height="50dp"
+        android:calendarTextColor="#111111"
+        android:layout_below="@+id/tv_prezime"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp" />
+
+    <RatingBar
+        android:id="@+id/rb_ocena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_prezime"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="-14dp" />
+
+    <TextView
+        android:id="@+id/tv_bio"
+        android:layout_below="@+id/tv_dat_smrti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Biografija"
+        android:gravity="center"
+         />
+
+
+</RelativeLayout>
